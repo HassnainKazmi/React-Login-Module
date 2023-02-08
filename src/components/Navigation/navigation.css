@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin: 0 3rem;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  /* transition: var(--transition); */
+}
