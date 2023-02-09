@@ -11,9 +11,6 @@ const Navigation = () => {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/more">More</Link>
-          </li>
         </ul>
       </div>
     </header>
