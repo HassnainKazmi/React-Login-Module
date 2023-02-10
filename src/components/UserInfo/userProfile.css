@@ -9,3 +9,40 @@
   align-items: center;
   margin-top: 10rem !important;
 }
+
+.profile__content {
+  width: 75%;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p {
+  font-weight: 800;
+}
+
+span {
+  font-weight: 500;
+}
+
+/* ---------------------- TABLETS ---------------------- */
+@media screen and (max-width: 767px) {
+  .profile__container {
+    width: var(--container-width-md);
+  }
+  .profile__content {
+    width: 80%;
+  }
+}
+
+/* ---------------------- MOBILES ---------------------- */
+@media screen and (max-width: 600px) {
+  .profile__container {
+    width: var(--container-width-sm);
+  }
+  .profile__content {
+    width: 90%;
+  }
+}

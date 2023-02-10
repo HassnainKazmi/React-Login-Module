@@ -16,7 +16,6 @@ ul {
 
 ul li {
   display: inline;
-  margin: 0 3rem;
 }
 
 a {
@@ -26,4 +25,17 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+/* ---------------------- TABLETS ---------------------- */
+@media screen and (max-width: 767px) {
+  header {
+    width: var(--container-width-md);
+  }
+}
+
+/* ---------------------- MOBILES ---------------------- */
+@media screen and (max-width: 600px) {
+  header {
+    width: var(--container-width-sm);
+  }
 }

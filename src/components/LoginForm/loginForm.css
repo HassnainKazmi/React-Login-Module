@@ -33,3 +33,32 @@ button {
   font-style: italic;
   margin-top: 1rem;
 }
+
+/* ---------------------- TABLETS ---------------------- */
+@media screen and (max-width: 991px) {
+  .form__container {
+    width: var(--container-width-md);
+    /* margin: 0 auto; */
+  }
+}
+
+/* ---------------------- MOBILES ---------------------- */
+@media screen and (max-width: 767px) {
+  .form__container {
+    width: var(--container-width-sm);
+    grid-template-columns: none;
+    align-items: center;
+  }
+
+  form {
+    margin: 1rem;
+    padding: 0.75rem;
+  }
+
+  .greetings {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+}

@@ -4,6 +4,7 @@
   "homepage": "https://HassnainKazmi.github.io/React-Login-Module",
   "private": true,
   "dependencies": {
+    "@firebase/auth": "^0.21.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

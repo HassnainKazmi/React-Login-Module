@@ -5,6 +5,7 @@ import db from "../Firebase";
 
 const MorePage = () => {
   const [userInfo, setUserInfo] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
@@ -12,8 +13,11 @@ const MorePage = () => {
       .get()
       .then((querySnapShot) => {
         querySnapShot.forEach((element) => {
+          // console.log(element, "ELEMENT");
           var data = element.data();
+          // console.log(data, "DATA");
           setUserInfo((arr) => [...arr, data]);
+          // console.log(userInfo, "AFTER STATE SET");
         });
       });
   }, []);
@@ -22,14 +26,20 @@ const MorePage = () => {
     for (let i = 0; i < userInfo.length; i++) {
       if (location.state.id === userInfo[i].id) {
         setUserInfo(userInfo[i]);
+        setIsLoading(false);
       }
     }
   };
 
   useEffect(() => {
-    console.log(userInfo);
+    console.log(userInfo, "HERE");
   }, [userInfo]);
+
   matchedUser();
+
+  if (isLoading) {
+    return <section style={{ textAlign: "center" }}>Loading</section>;
+  }
 
   return (
     <section>

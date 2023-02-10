@@ -32,19 +32,21 @@ const HomePage = () => {
         if (userData.password === data[i].password) {
           userID = data[i].id;
           setData(userData);
-          console.log("User exists!", userID);
+          // console.log("User exists!", userID);
           navigate("/more", { state: { id: userID } });
           setError(false);
         } else {
-          console.log("Incorrect credentials");
+          // console.log("Incorrect credentials");
           setError(true);
         }
+      } else {
+        setError(true);
       }
     }
   };
 
   if (isLoading) {
-    return <section>Loading</section>;
+    return <section style={{ textAlign: "center" }}>Loading</section>;
   }
 
   return (
