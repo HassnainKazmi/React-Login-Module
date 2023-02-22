@@ -1,13 +1,11 @@
 # Login Module
-Developing a standalone responsive login module that takes user credentials as input, compares the entered data with the data stored in the database, and upon
-successful login, displays the corresponding user information.
+Developed a standalone login module that receives user credentials as input, validates the entered data against the stored data in the database, and upon successful login, displays the associated user information.
 
-Technologies Used: React JS, JavaScript, Firebase, CSS3, and HTML5
+To access the login page, users must enter correct credentials, such as the email "hassnainkazmi07@gmail.com" and password "hello2023". To ensure access to the login page, users should click the "home" tab once the website is opened. 
 
-Successful login: 
+**Please note that this project is currently ongoing.**
 
-Email: hassnainkazmi07@gmail.com
-Password: hello2023
+Technologies Used: React JS, JavaScript, Firebase, CSS3, & HTML5.
 
-Note: I am currently working on this project.
-Please click on home tab after opening the website so that login page appears on the screen.
+
+
