@@ -9,7 +9,7 @@ const Navigation = () => {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/React-Login-Module/">Home</Link>
           </li>
         </ul>
       </div>

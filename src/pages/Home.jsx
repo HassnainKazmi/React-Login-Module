@@ -33,7 +33,7 @@ const HomePage = () => {
           userID = data[i].id;
           setData(userData);
           // console.log("User exists!", userID);
-          navigate("/more", { state: { id: userID } });
+          navigate("/React-Login-Module/user", { state: { id: userID } });
           setError(false);
         } else {
           // console.log("Incorrect credentials");
