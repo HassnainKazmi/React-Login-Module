@@ -3,7 +3,7 @@ Developed a responsive standalone login module that receives user credentials as
 
 To ensure access to the login page, users should click the "home" tab once the website is opened. Then, users must enter the correct credentials such as the email "hassnainkazmi07@gmail.com" and password "hello2023" to see their information. 
 
-Technologies Used: React JS, JavaScript, Firestore, CSS3, & HTML5
+Technologies Used: React JS, JavaScript, Firestore, CSS3, HTML5
 
 
 
